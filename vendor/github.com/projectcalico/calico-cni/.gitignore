@@ -1,0 +1,11 @@
+dist
+kubeconfig
+.idea
+*~
+vendor
+net.d
+addstats
+delstats
+*.pyc
+*.created
+tmp-cni

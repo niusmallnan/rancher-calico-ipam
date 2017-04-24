@@ -1,0 +1,28 @@
+package: github.com/projectcalico/calico-cni
+import:
+- package: github.com/Sirupsen/logrus
+- package: github.com/containernetworking/cni
+  version: 07a8a28637e97b22eb8dfe710eeae1344f69d16e
+  subpackages:
+  - pkg/ip
+  - pkg/ipam
+  - pkg/ns
+  - pkg/skel
+  - pkg/types
+- package: github.com/golang/glog
+- package: github.com/onsi/ginkgo
+- package: github.com/onsi/gomega
+  subpackages:
+  - gexec
+- package: github.com/projectcalico/libcalico-go
+  version: v1.0.0-rc6
+  subpackages:
+  - lib/api
+  - lib/client
+  - lib/errors
+  - lib/net
+- package: github.com/vishvananda/netlink
+- package: k8s.io/client-go
+  subpackages:
+  - kubernetes
+  - tools/clientcmd
